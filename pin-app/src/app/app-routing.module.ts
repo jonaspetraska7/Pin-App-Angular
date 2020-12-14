@@ -4,6 +4,7 @@ import { ThemeComponent } from './views/theme/theme.component';
 import { PoolComponent } from './views/pool/pool.component';
 import { RegisterComponent } from './views/register/register.component';
 import { LoginComponent } from './views/login/login.component';
+import { UserComponent } from './views/user/user.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'pools', component: PoolComponent, canActivate: [AuthGuard] },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent},
-  { path: 'users', component: PoolComponent, canActivate: [AuthGuard] },
+  { path: 'users', component: UserComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({

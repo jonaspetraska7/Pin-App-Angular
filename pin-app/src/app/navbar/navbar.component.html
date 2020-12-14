@@ -1,7 +1,6 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" style="color: white; background-color: red; display: flex; align-items: center;
-    justify-content: center; border-radius: 5px; font-size: large;"><p>Pin-App</p></a>
+    <img src="../../assets/pin.svg" class="navbar-brand" style="color: white; border-radius: 5px; font-size: large;"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,20 +8,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" style="font-size:large" routerLink="/">Home</a>
+            <a class="nav-link" style="font-size:medium" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style="font-size:large" routerLink="/themes">Themes</a>
+            <a class="nav-link" style="font-size:medium" routerLink="/themes">Themes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style="font-size:large" routerLink="/pools">Pools</a>
+            <a class="nav-link" style="font-size:medium" routerLink="/pools">Pools</a>
         </li>
         <li class="nav-item" *ngIf="isAdmin == true">
-            <a class="nav-link" style="font-size:large" routerLink="/users">User Administration</a>
+            <a class="nav-link" style="font-size:medium" routerLink="/users">User Administration</a>
         </li>
       </ul>
       <form class="my-2 my-lg-0">
-        <button (click)="logout()" class="btn btn-outline-success my-2 my-sm-0" style="font-size:large" type="submit">LogOut</button>
+        <button (click)="logout()" class="btn btn-outline-success my-2 my-sm-0" style="font-size:medium" type="submit">LogOut</button>
       </form>
     </div>
   </nav>

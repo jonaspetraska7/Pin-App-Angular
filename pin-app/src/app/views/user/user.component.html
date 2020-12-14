@@ -1,1 +1,34 @@
-<p>user works!</p>
+<h1>Users
+    <button *ngIf="isAdmin == true" (click)="add()" id="btnCad" class="btn btn-lg btn-success glyphicon glyphicon-plus" accesskey="s"></button>
+</h1>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6" *ngFor="let theme of themes">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-xs-3 col-md-3 text-center">
+                        <img src="http://bootsnipp.com/apple-touch-icon-114x114-precomposed.png" alt="bootsnipp"
+                            class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-xs-9 col-md-9 section-box">
+                        <h2>
+                            {{theme.username}}
+                        </h2>
+                        <p>
+                            {{theme.featured_pool_id}}
+                        </p>
+                        <hr />
+                        <p *ngIf="isAdmin == true">
+                            <button (click)="edit(theme.id, theme.name, theme.featured_pool_id)" id="btnEdit" class="btn btn-xs btn-warning glyphicon glyphicon-pencil" accesskey="a"></button>
+                            <button (click)="remove(theme.id)" id="btnExc" class="btn btn-xs btn-danger glyphicon glyphicon-trash" accesskey="x"></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
