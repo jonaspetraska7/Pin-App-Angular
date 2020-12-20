@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "../node_modules/ngx-simple-modal/styles/simple-modal.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
